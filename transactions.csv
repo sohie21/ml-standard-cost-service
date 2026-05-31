@@ -1,0 +1,9 @@
+transaction_id;product_id;customer_id;transaction_date;online_order;order_status;brand;product_line;product_class;product_size;list_price;standard_cost
+1;2;2950;25.02.2017;False;Approved;Solex;Standard;medium;medium;71,49;53,62
+2;3;3120;21.05.2017;True;Approved;Trek Bicycles;Standard;medium;large;2091,47;388,92
+3;37;402;16.10.2017;False;Approved;OHM Cycles;Standard;low;medium;1793,43;248,82
+4;88;3135;31.08.2017;False;Approved;Norco Bicycles;Standard;medium;medium;1198,46;381,10
+5;78;787;01.10.2017;True;Approved;Giant Bicycles;Standard;medium;large;1765,3;709,48
+6;25;2339;08.03.2017;True;Approved;Giant Bicycles;Road;medium;medium;1538,99;829,65
+7;22;1542;21.04.2017;True;Approved;WeareA2B;Standard;medium;medium;60,34;45,26
+8;15;2459;15.07.2017;False;Approved;WeareA2B;Standard;medium;medium;1292,84;13,44
