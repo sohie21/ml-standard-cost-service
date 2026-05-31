@@ -87,9 +87,9 @@ curl -X POST http://localhost:8000/predict \
   }'
 ```
 
-## Облачная разработка
+## Облачная реализация
 
-On cloud VM:
+На облачной VM:
 
 ```bash
 sudo apt update
@@ -103,14 +103,14 @@ newgrp docker
 bash scripts/deploy_vm.sh
 ```
 
-Then open:
+И далее открыть:
 
 ```text
 http://YOUR_VM_PUBLIC_IP:8000/health
 http://YOUR_VM_PUBLIC_IP:8000/docs
 ```
 
-## Destroy infrastructure
+## Инфраструктура удаления модуля
 
 ```bash
 bash scripts/destroy.sh
