@@ -89,25 +89,10 @@ curl -X POST http://localhost:8000/predict \
 
 ## Облачная реализация
 
-На облачной VM:
-
-```bash
-sudo apt update
-sudo apt install -y git
-git clone https://github.com/sohie21/ml-standard-cost-service.git
-cd ml-standard-cost-service
-
-bash scripts/bootstrap_vm.sh
-newgrp docker
-
-bash scripts/deploy_vm.sh
-```
-
-И далее открыть:
-
+Проверка облачной VM:
 ```text
-http://YOUR_VM_PUBLIC_IP:8000/health
-http://YOUR_VM_PUBLIC_IP:8000/docs
+http://158.160.138.105:8000/health
+http://158.160.138.105:8000/docs
 ```
 
 ## Инфраструктура удаления модуля
