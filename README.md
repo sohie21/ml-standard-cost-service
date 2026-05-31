@@ -93,6 +93,7 @@ curl -X POST http://localhost:8000/predict \
 ```text
 http://158.160.138.105:8000/health
 http://158.160.138.105:8000/docs
+http://158.160.138.105:8000/metrics
 ```
 
 ## Инфраструктура удаления модуля
