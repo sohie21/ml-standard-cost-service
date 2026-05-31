@@ -1,14 +1,14 @@
 # Standard Cost Prediction ML System
 
-This repository contains a small production-like MLOps project for predicting `standard_cost` from transaction data.
+В этом репозитории хранится небольшой MLOps проект предсказания `standard_cost` на основе транзакционных данных для магазина.
 
-## Business goal
+## Бизнес-цель
 
-The goal is to estimate product standard cost automatically and support margin analytics.
+Целью является предсказать стандартную цену на товар и поддерживать аналитику.
 
-## ML task
+## ML
 
-Task type: regression.
+Тип: регрессия
 
 Target:
 
@@ -16,35 +16,35 @@ Target:
 standard_cost
 ```
 
-Main ML metrics:
+Основные метрики ML:
 
 - MAE
 - RMSE
 - R2
 
-Main business metric:
+Основная бизнес-метрика:
 
-- average absolute standard cost estimation error
+- средняя абсолютная стандартная ошибка оценки стоимости
 
 ## MLOps maturity level
 
-Declared maturity level: 2.
+Объявленный maturity level: 2.
 
-Implemented components:
+Реализованные компоненты:
 
-- code versioning through GitHub
-- CI through GitHub Actions
-- model serving through FastAPI
-- Dockerized deployment
-- Docker Compose infrastructure
-- model experiment logging through MLflow
-- retraining pipeline description through Prefect
-- healthcheck endpoint
-- metrics endpoint
-- SLI/SLO documentation
-- ADR for Metrics Driven Development
+- версионирование кода через GitHub
+- CI через GitHub Actions
+- обслуживание моделей через FastAPI
+- развертывание в Docker-контейнерах
+- инфраструктура Docker Compose
+- логирование экспериментов с моделями через MLflow
+- описание конвейера переобучения
+- конечная точка проверки работоспособности
+- конечная точка метрик
+- документация SLI/SLO
+- ADR для разработки, основанной на метриках
 
-## Local development
+## Локальная разработка
 
 ```bash
 python -m venv .venv
@@ -69,7 +69,7 @@ docker ps
 curl http://localhost:8000/health
 ```
 
-## Prediction example
+## Пример предсказания
 
 ```bash
 curl -X POST http://localhost:8000/predict \
@@ -87,14 +87,14 @@ curl -X POST http://localhost:8000/predict \
   }'
 ```
 
-## Cloud deployment
+## Облачная разработка
 
 On cloud VM:
 
 ```bash
 sudo apt update
 sudo apt install -y git
-git clone https://github.com/YOUR_USERNAME/ml-standard-cost-service.git
+git clone https://github.com/sohie21/ml-standard-cost-service.git
 cd ml-standard-cost-service
 
 bash scripts/bootstrap_vm.sh
@@ -116,4 +116,4 @@ http://YOUR_VM_PUBLIC_IP:8000/docs
 bash scripts/destroy.sh
 ```
 
-If the VM is no longer needed, delete it in the cloud provider console.
+Дата окончания поддержания виртуальной машины: 31 июня 2026 года.
