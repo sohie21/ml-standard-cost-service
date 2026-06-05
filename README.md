@@ -170,38 +170,38 @@ Traffic switch to new model version
 Swagger / API documentation:
 
 ```text
-http://158.160.138.105:8000/docs
+http://130.193.57.112:8000/docs
 ```
 
 Healthcheck:
 
 ```text
-http://158.160.138.105:8000/health
+http://130.193.57.112:8000/health
 ```
 
 Metrics / validation endpoint:
 
 ```text
-http://158.160.138.105:8000/metrics
+http://130.193.57.112:8000/metrics
 ```
 
 Prediction endpoint:
 
 ```text
-http://158.160.138.105:8000/predict
+http://130.193.57.112:8000/predict
 ```
 
 Проверка из терминала:
 
 ```bash
-curl http://158.160.138.105:8000/health
-curl http://158.160.138.105:8000/metrics
+curl http://130.193.57.112:8000/health
+curl http://130.193.57.112:8000/metrics
 ```
 
 Пример запроса к модели:
 
 ```bash
-curl -X POST http://158.160.138.105:8000/predict \\
+curl -X POST http://130.193.57.112:8000/predict \\
   -H "Content-Type: application/json" \\
   -d '{{ 
     "product_id": 2,
